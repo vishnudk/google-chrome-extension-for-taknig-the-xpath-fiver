@@ -1,0 +1,19 @@
+{
+    "name": "Getting Started Example",
+    "version": "2.0",
+    "manifest_version":2,
+    "description": "Build an Extension! v2",
+    "permision":["<all_urls>",
+    "contextMenus",
+    "tabs",
+    "notifications",
+    "storage"],
+    "browser_action": {
+        "default_title":"test 123",
+        "default_popup":"popup.html"
+    }
+    "page_action": {
+        "default_title":"test 123",
+        "default_popup":"popup.html"
+    }
+}
