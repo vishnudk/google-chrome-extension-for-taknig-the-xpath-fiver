@@ -3,9 +3,19 @@
     "version": "2.0",
     "manifest_version":2,
     "description": "Build an Extension! v2",
-
+    "permissions": [
+        "contextMenus"
+      ],
+      "icons": {
+        "16": "icons/icon2.png",
+        "48":"icons/icon48.png",
+        "32":"icons/icon32.png",
+        "128":"icons/icon128.png"
+      },
     "browser_action": {
         "default_title":"test 123",
-        "default_popup":"popup.html"
+        "default_icon":"icons/icon2.png",
+        "default_popup":"public/htmlFiles/popup.html"
     }
+  
 }
