@@ -5,7 +5,7 @@
     "description": "Build an Extension! v2",
     "background":{
         "scripts":["background.js"],
-        "persistent":true//false
+        "persistent":false
     },
     "permissions": [
         "storage",
