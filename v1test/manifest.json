@@ -11,8 +11,8 @@
         "storage",
         "notifications",
         "contextMenus",
-        // "webRequest",
-        // "webRequestBlocking",
+        "activeTab",
+  
         "<all_urls>"
       ],
       "icons": {
@@ -21,10 +21,6 @@
         "32":"icons/icon32.png",
         "128":"icons/icon128.png"
       }
-    // "browser_action": {
-    //     "default_title":"test 123",
-    //     "default_icon":"icons/icon2.png",
-    //     "default_popup":"public/htmlFiles/popup.html"
-    // }
+ 
   
 }
