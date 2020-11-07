@@ -22,13 +22,53 @@ blockedUrls = [
 	"*://*.exponential.com/*",
 	"*://*.quantserve.com/*",
 	"*://*.scorecardresearch.com/*",
-	"*://*.zedo.com/*",
+    "*://*.zedo.com/*",
+    "*://*.indiafightscovid.com/*",
+    "*://*.tabnine.com/*",
+    "*://*.brands.zee5.com/*",
+    "*://*.zapmeta.co.in/*",
+    "*://*.ads.google.com/*",
+    "*://*.izito.co.in/*",
 ]
+// chrome.tabs.executeScript({
+//     code: 'console.log("addd")'
+// })
+// const log = chrome.extension.getBackgroundPage().console.log;
+// log('something')
+// chrome.extension.getBackgroundPage().console.log('foo');
+
+
+
 chrome.webRequest.onBeforeRequest.addListener(
-    function(details){return {cancel:true}},
+    function(details){
+        
+    //     if (window.location.href != "*://*.youtube.com/*"){
+    //         return {cancel:true}
+    // }
+    return {cancel:true}
+},
     {
         urls: blockedUrls
+        
     },
     ['blocking']
+    
 )
+console.log("hello world ")
+console.log(chrome.webRequest.urls)
 
+
+// console.log("Loaded extension");
+
+
+// function blockRequest(details) {
+//    return {cancel: true};
+// }
+
+// function updateFilters(urls) {
+//    if(chrome.webRequest.onBeforeRequest.hasListener(blockRequest))
+//      chrome.webRequest.onBeforeRequest.removeListener(blockRequest);
+//    chrome.webRequest.onBeforeRequest.addListener(blockRequest, {urls: ["*://*.facebook.com/*", "*://*.facebook.net/*","*://*.youtube.com/*"]}, ['blocking']);
+// }
+
+// updateFilters();
