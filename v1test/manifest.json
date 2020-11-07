@@ -1,21 +1,18 @@
 {
-    "name": "Getting Started Example",
+    "name": "Xml path finder",
     "version": "2.0",
     "manifest_version":2,
     "description": "Build an Extension! v2",
     "background":{
-        "matches":[
-          "*://*.youtube.com/*"
-        ],
         "scripts":["background.js"],
-        "persistent":true
+        "persistent":false
     },
     "permissions": [
-        // "storage",
-        // "notifications",
-        // "contextMenus",
-        "webRequest",
-        "webRequestBlocking",
+        "storage",
+        "notifications",
+        "contextMenus",
+        // "webRequest",
+        // "webRequestBlocking",
         "<all_urls>"
       ],
       "icons": {
